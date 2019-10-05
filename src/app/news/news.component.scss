@@ -1,0 +1,25 @@
+$mainColor:#fcc45d;
+
+.vote
+{
+	position: absolute;
+    top: 0;
+    background-color: $mainColor;
+    right: 4px;
+    padding: 10px;
+}
+.movie-desc
+{
+	position: relative
+}
+.movie-card
+{
+	background-color: #141443;
+    box-shadow: 0px 0px 30px black;
+	margin: 0 0 35px 0;
+}
+
+.fa-star
+{
+	font-size: 12px;
+}

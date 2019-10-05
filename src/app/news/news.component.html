@@ -1,0 +1,31 @@
+<div class="container py-5">
+
+	<input class="form-control" [(ngModel)]='term'/>
+
+</div>
+
+
+<div class="container-fluid text-white py-5">
+	<div class="row">
+		<div class="col-md-6" *ngFor="let u of userss |search2:term">
+			<div class="movie-card">
+				
+				<div class="row">
+				
+				<div class="col-md-6">
+					
+		<img src="https://image.tmdb.org/t/p/w500{{u.poster_path}}" class="img-fluid"/>	
+				</div>
+					<div class="col-md-6">
+						<div class="movie-desc">
+							<h4 class="pt-5">{{u.title}}</h4>
+		<i class="fa fa-star text-warning" *ngFor="let x of u.votestar"></i>
+							<p>{{u.overview|semore2:100}}</p>
+							<div class="vote">{{u.vote_average}}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
